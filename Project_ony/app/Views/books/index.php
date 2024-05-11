@@ -4,7 +4,11 @@
 <div class="container">
   <div class="row">
     <div class="col">
+      <a href="/books/create" class="btn btn-primary mt-3">Tambah Data Buku</a>
       <h1 classs="mt-2">Daftar Buku</h1>
+      <div class="alert alert-success" role="alert">
+        <?= session()->getFlashdata('pesan'); ?>
+      </div>
       <table class="table">
         <thead class="thead-dark">
           <tr>
